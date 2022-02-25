@@ -1,16 +1,23 @@
-# calculadoraprojetoppm
+# Calculadora Simples
 
-A new Flutter application.
+## Description
+  A simple calculator that works with whole numbers and performs the four basic math operations (addition, subtraction, multiplication and division).
 
-## Getting Started
+## Screens
+   ![](https://github.com/jorge-canuto/projeto_calculadora/blob/master/images/calculadora_screen1.jpeg)
+   ![](https://github.com/jorge-canuto/projeto_calculadora/blob/master/images/calculadora_screen2.jpeg)
 
-This project is a starting point for a Flutter application.
+## Functions
+  This application performs:
+          - Addition
+          - Subtraction
+          - Multiplication
+          - Division
+          
+## Done
+    - [x] Application interface
+    - [x] Implementation of addition functionality
+    - [x] Implementation of subtraction functionality
+    - [x] Implementation of multiplication functionality
+    - [x] Implementation of division functionality
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
