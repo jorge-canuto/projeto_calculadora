@@ -15,9 +15,9 @@
           - Division
           
 ## Done
-    - [x] Application interface
-    - [x] Implementation of addition functionality
-    - [x] Implementation of subtraction functionality
-    - [x] Implementation of multiplication functionality
-    - [x] Implementation of division functionality
+    - [X] Application interface
+    - [X] Implementation of addition functionality
+    - [X] Implementation of subtraction functionality
+    - [X] Implementation of multiplication functionality
+    - [X] Implementation of division functionality
 
