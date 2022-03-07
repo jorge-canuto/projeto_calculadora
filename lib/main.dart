@@ -90,7 +90,7 @@ class MyHomePageState extends State<MyHomePage> {
               child: Text("/", style: TextStyle(color: Colors.white, fontSize: 20.0)),
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.grey)),
+                  MaterialStateProperty.all<Color>(Colors.lightBlue)),
             )
           ],
         ),
@@ -125,7 +125,7 @@ class MyHomePageState extends State<MyHomePage> {
               child: Text("*", style: TextStyle(color: Colors.white, fontSize: 20.0)),
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.grey)),
+                  MaterialStateProperty.all<Color>(Colors.lightBlue)),
             )
           ],
         ),
@@ -159,7 +159,7 @@ class MyHomePageState extends State<MyHomePage> {
               child: Text("-", style: TextStyle(color: Colors.white, fontSize: 20.0)),
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.grey)),
+                  MaterialStateProperty.all<Color>(Colors.lightBlue)),
             )
           ],
         ),
@@ -186,14 +186,14 @@ class MyHomePageState extends State<MyHomePage> {
               child: Text("=", style: TextStyle(color: Colors.white, fontSize: 20.0)),
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.grey)),
+                  MaterialStateProperty.all<Color>(Colors.lightBlue)),
             ),
             ElevatedButton(
               onPressed: ()=> operacao("+"),
               child: Text("+", style: TextStyle(color: Colors.white, fontSize: 20.0)),
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.grey)),
+                  MaterialStateProperty.all<Color>(Colors.lightBlue)),
             )
           ],
         )
@@ -208,7 +208,7 @@ class MyHomePageState extends State<MyHomePage> {
   }
 
   void addTela(String tecla){
-    if(display.length == 1 && tecla == "0"){
+    if(display.length == 1 && display == "0" && tecla == "0"){
       display;
     }
     else if(display == "0"){
@@ -236,12 +236,12 @@ class MyHomePageState extends State<MyHomePage> {
     op = operador;
     operando1 = display;
     setState(() {
-      display = "";
+      display = operando1 + " " + op +" ";
     });
   }
 
   void igual() {
-    operando2 = display;
+    operando2 = display.split(" ")[2];
     int resultado;
 
     if (op == "+") {
